@@ -1,0 +1,28 @@
+name: base-conda
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - ipython=8.5  # a powerful Python shell
+  - jupyterlab=3.4  # to edit and run Jupyter notebooks
+  - matplotlib=3.5  # beautiful plots
+  - nbdime=3.1  # optional tool to diff Jupyter notebooks
+  - numexpr=2.8  # Pandas for numerical expressions
+  - numpy=1.23  # Powerful n-dimensional arrays and numerical computing tools
+  - pandas=1.4  # data analysis and manipulation tool
+  - pillow=9.2  # image manipulation library, (used by matplotlib.image.imread)
+  - pip  # Python's package-management system
+  - python=3.10  # I beloved programming language! :)
+  - scikit-learn=1.1  # machine learning library
+  - scipy=1.9  # scientific/technical computing library
+  - wheel  # built-package format for pip
+  - widgetsnbextension=4.0  # interactive HTML widgets for Jupyter notebooks
+  - pip:
+    - tensorboard-plugin-profile~=2.8.0  # profiling plugin for TensorBoard
+    - tensorboard~=2.10.0  # TensorFlow's visualization toolkit
+    - tensorflow-datasets~=4.6.0  # datasets repository, ready to use
+    - tensorflow-hub~=0.12.0  # trained ML models repository, ready to use
+    - tensorflow-serving-api~=2.10.0  # or tensorflow-serving-api-gpu if gpu
+    - tensorflow~=2.10.0  # Deep Learning library
+    - transformers~=4.21.3  # Natural Language Processing lib for TF or PyTorch
+    - tensorflow-rocm~=2.9.2 # AMD GPU
